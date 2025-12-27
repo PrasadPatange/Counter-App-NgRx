@@ -1,3 +1,5 @@
+// NOTE : Reducer (The "How it changes") - is like rule book -> Its Decides HOW data changes.
+
 import { Action, createReducer, on } from "@ngrx/store";
 // import { CounterActions, INCREMENT, IncrementAction } from "./counter.actions";
 import { decrement, increment, set } from "./counter.actions";

@@ -1,3 +1,5 @@
+// NOTE : Effects  ( Side-effects that should be trigger for certain actions (eg: send HTTP request)) -> helper Robot -> Calls API, Does Background Work.
+
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { decrement, increment, init, set } from "./counter.actions";
@@ -19,6 +21,7 @@ export class CounterEffects {
       ofType(init),
       switchMap(() => {
         const storeCounter = localStorage.getItem('count');
+        console.log("storeCounter:",storeCounter)
         if(storeCounter) return of(set({value: +storeCounter}));  //switchMap return new observable.( convert action into observable using of() rxjs operator)
         return of(set({value: 0}))
       }) // to switch new observable change

@@ -16,7 +16,7 @@ export class CounterOutput {
   doubleCount$: Observable<number>; //$ represent variable is observable.
   constructor(private store: Store<{counter: number}>){
     //  this.count$ = this.store.select('counter') // reading data from the store.
-     this.count$ = this.store.select(selectCount) // using selector.
+     this.count$ = this.store.select(selectCount) // using selector. // get or read 
      this.doubleCount$ = this.store.select(selectDoubleCount) // using selector.
   }
 }

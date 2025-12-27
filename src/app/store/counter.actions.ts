@@ -1,3 +1,5 @@
+// NOTE : Action ( The "What happened") - is like button click -> I want to do something. 
+
 import { Action, createAction, props } from "@ngrx/store";
 
 //when we reload counter app then the counter value get from localSorage

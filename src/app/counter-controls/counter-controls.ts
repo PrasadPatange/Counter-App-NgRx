@@ -15,7 +15,7 @@ export class CounterControls {
   }
 
 increment(){
-  this.store.dispatch(increment({ value: 1}));  // 1. dispatch action  - { value: 2} pass data to action 
+  this.store.dispatch(increment({ value: 1}));  // 1. dispatch action  - { value: 1} pass data to action 
   // this.store.dispatch(new IncrementAction(1));  // 2. Instatiate Action 
 }
 decrement(){
